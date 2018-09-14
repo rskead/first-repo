@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUI Landing Page with Extras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.muicss.com/mui-latest/extra/mui-colors.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdn.muicss.com/mui-latest/extra/mui-combined.min.js"></script>
+
+    <script>
+      function activateModal() {
+        // initialize modal element
+        var modalEl = document.createElement('div');
+        modalEl.style.width = '400px';
+        modalEl.style.height = '300px';
+        modalEl.style.margin = '100px auto';
+        modalEl.style.backgroundColor = '#fff';
+    
+        // show modal
+        mui.overlay('on', modalEl);
+      }
+    </script>
+    
+  </head>
+  <body>
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table>
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title">RoseBud Studios</td>
+            <td class="mui--text-right">
+              <ul class="mui-list--inline mui--text-body2">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-center">
+      <div class="mui--appbar-height"></div>
+      <br>
+      <br>
+      <div class="mui--text-display3 row wow zoomInDown">RoseBud Studios</div>
+      <br>
+      <br>
+      <div class="mui--text-accent-secondary mui--text-headline">RoseBud Studios is my fantasy photography studio company that I use in my school assignments!</div>
+      <br>
+      <div id="content-wrapper" class="mui--text-left">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et malesuada tellus, ac commodo ligula. Nulla malesuada, nisi dapibus congue rhoncus, nibh nisi posuere magna, non pellentesque arcu erat vitae mauris. Ut risus lacus, gravida sit amet velit sed, auctor faucibus massa. Etiam pharetra est quis erat consectetur feugiat. Mauris lectus sem, sodales maximus lacinia non, luctus id lacus. Nam non massa quam. Aenean tincidunt eros id ipsum rutrum, non mattis diam fermentum. Duis sapien neque, tempus in elementum vitae, sollicitudin in tellus. Quisque fringilla sit amet purus vel fermentum. Praesent lobortis elementum turpis. Sed porttitor mauris at interdum dignissim. Nulla tristique lacus non ante tempor ultrices. Cras tincidunt id nulla eget laoreet.Aliquam aliquam massa id luctus maximus. Pellentesque nulla neque, tempus at nulla ac, fermentum cursus lorem.
+        </p>
+      </div>
+      <div>
+        <button class="mui-btn mui-btn--accent" onclick="activateModal()">Book Now!</button>
+      </div>
+      <br>
+      <div class="mui-divider"></div>
+      <br>
+      <i class="fa fa-user fa-5x mui--color-pink-A100 mui--text-display3 row wow zoomIn" aria-hidden="true"></i>
+      <i class="fa fa-camera fa-5x mui--color-pink-A100 mui--text-display3 row wow zoomIn" aria-hidden="true"></i>
+      <i class="fa fa-image fa-5x mui--color-pink-A100 mui--text-display3 row wow zoomIn" aria-hidden="true"></i>
+      
+      <ul class="mui-tabs__bar mui-tabs__bar--justified">
+        <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1">Portraits</a></li>
+        <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Landscapes</a></li>
+      </ul>
+      <br>
+      <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
+        <img src="https://celebrityaccess.com/wp-content/uploads/2018/07/Amber.Liu_.600.77728-600x416.jpg" alt="Amber">
+      </div>
+      <br>
+      <div class="mui-tabs__pane" id="pane-justified-2">
+        <img src="https://cdn.theatlantic.com/assets/media/img/photo/2017/09/landscapes-of-norway/n03_844052000/main_900.jpg?1507146797" alt="Amber">
+      </div>
+
+    </div>
+    <footer>
+      <div class="mui-container mui--text-center mui--text-bottom">
+        Made with ♥ by <a href="https://www.muicss.com">MUICSS</a>
+      </div>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
